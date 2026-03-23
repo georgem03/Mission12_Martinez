@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission11_Martinez.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72025883279083a367d7e3f1d528ba57d9e2c973")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f81fe2f332737bf657ead7c5c2ac2d91f8cc4960")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission11_Martinez.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission11_Martinez.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

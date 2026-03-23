@@ -36,8 +36,14 @@ function BookList() {
         <div className="card mb-3" key={b.bookId}>
           <div className="card-body">
             <h5>{b.title}</h5>
-            <p>{b.author}</p>
-            <p>${b.price}</p>
+            <p><strong>Book ID:</strong> {b.bookId}</p>
+            <p><strong>Author:</strong> {b.author}</p>
+            <p><strong>Publisher:</strong> {b.publisher}</p>
+            <p><strong>ISBN:</strong> {b.isbn}</p>
+            <p><strong>Classification:</strong> {b.classification}</p>
+            <p><strong>Category:</strong> {b.category}</p>
+            <p><strong>Page Count:</strong> {b.pageCount}</p>
+            <p><strong>Price:</strong> ${Number(b.price).toFixed(2)}</p>
           </div>
         </div>
       ))}
