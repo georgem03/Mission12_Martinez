@@ -1,43 +1,82 @@
 import { useEffect, useState } from "react";
 import type { Book } from "./types/Book";
 
-function BookList(){
+function BookList() {
+  const [books, setBooks] = useState<Book[]>([]);
+  const [pageSize, setPageSize] = useState(5);
+  const [pageNum, setPageNum] = useState(1);
+  const [totalBooks, setTotalBooks] = useState(0);
+  const [sort, setSort] = useState("title_asc");
 
-    const [books, setBooks] = useState<Book[]>([]);
+  useEffect(() => {
+    fetch(`https://localhost:5000/Books?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error(`Request failed: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then(data => {
+        setBooks(data.books ?? data.Books ?? []);
+        setTotalBooks(data.totalNumBooks ?? data.TotalNumBooks ?? 0);
+      })
+      .catch(err => {
+        console.error("Failed to load books", err);
+        setBooks([]);
+        setTotalBooks(0);
+      });
+  }, [pageSize, pageNum, sort]);
 
-    useEffect(() => {
-        const fetchBooks = async () => {
-            const response = await fetch('https://localhost:5000/book');
-            const data = await response.json();
-            setBooks(data);
-        };
+  return (
+    <div className="container">
+      <h2>Book List</h2>
+      <p>Total books: {totalBooks}</p>
 
-        fetchBooks();
+      {books.map(b => (
+        <div className="card mb-3" key={b.bookId}>
+          <div className="card-body">
+            <h5>{b.title}</h5>
+            <p>{b.author}</p>
+            <p>${b.price}</p>
+          </div>
+        </div>
+      ))}
 
-    }, []);
+      {/* Pagination */}
+      <button onClick={() => setPageNum(pageNum - 1)} disabled={pageNum === 1}>
+        Previous
+      </button>
 
-    return(
-        <>
-            <h1>Book List</h1>
-            <br />
-            {books.map((b) => 
-            <div id="bookCard">
-                <h3>{b.title}</h3>
-                <ul>
-                    <li>Author: {b.author}</li>
-                    <li>Publisher: {b.publisher}</li>
-                    <li>ISBN: {b.isbn}</li>
-                    <li>Classification: {b.classification}</li>
-                    <li>Category: {b.category}</li>
-                    <li>Page Count: {b.pageCount}</li>
-                    <li>Price: ${b.price.toFixed(2)}</li>
-                </ul>
-            </div>
-        
-        )}
-        </>
+      <button onClick={() => setPageNum(pageNum + 1)}>
+        Next
+      </button>
 
-    );
+      {/* Page Size */}
+      <select
+        value={pageSize}
+        onChange={(e) => {
+          setPageSize(Number(e.target.value));
+          setPageNum(1);
+        }}
+      >
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+
+      {/* Sorting */}
+      <select
+        value={sort}
+        onChange={(e) => {
+          setSort(e.target.value);
+          setPageNum(1);
+        }}
+      >
+        <option value="title_asc">Title (A-Z)</option>
+        <option value="title_desc">Title (Z-A)</option>
+      </select>
+    </div>
+  );
 }
 
 export default BookList;
