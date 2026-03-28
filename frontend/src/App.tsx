@@ -1,14 +1,23 @@
+import { useState } from 'react';
+import { CartProvider } from './context/CartContext';
+import BookList from './BookList';
+import CartPage from './pages/CartPage';
 
-import './App.css'
-import BookList from './BookList'
+type Page = 'books' | 'cart';
 
 function App() {
+const [currentPage, setCurrentPage] = useState<Page>('books');
 
-  return (
-    <>
-      <BookList />
-    </>
-  );
+return (
+  <CartProvider>
+    {currentPage === 'books' ? (
+      <BookList onGoToCart={() => setCurrentPage('cart')} />
+    ) : (
+      <CartPage onContinueShopping={() => setCurrentPage('books')} />
+    )}
+  </CartProvider>
+);
 }
 
-export default App
+export default App;
+ 
