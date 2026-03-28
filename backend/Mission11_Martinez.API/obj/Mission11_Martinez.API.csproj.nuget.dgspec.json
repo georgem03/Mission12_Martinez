@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/georgemartinez/Desktop/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj": {}
+    "/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj": {}
   },
   "projects": {
-    "/Users/georgemartinez/Desktop/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj": {
+    "/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/georgemartinez/Desktop/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj",
+        "projectUniqueName": "/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj",
         "projectName": "Mission11_Martinez.API",
-        "projectPath": "/Users/georgemartinez/Desktop/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj",
+        "projectPath": "/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/Mission11_Martinez.API.csproj",
         "packagesPath": "/Users/georgemartinez/.nuget/packages/",
-        "outputPath": "/Users/georgemartinez/Desktop/Mission11_Martinez/backend/Mission11_Martinez.API/obj/",
+        "outputPath": "/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/georgemartinez/.nuget/NuGet/NuGet.Config"
