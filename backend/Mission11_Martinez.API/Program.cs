@@ -22,7 +22,8 @@ builder.Services.AddCors(options =>
                 "http://localhost:5173",
                 "https://localhost:5173",
                 "http://localhost:3000",
-                "https://localhost:3000")
+                "https://localhost:3000",
+                "https://ashy-glacier-0c5b0481e.azurestaticapps.net")
             .AllowAnyMethod()
             .AllowAnyOrigin()
             .AllowAnyHeader();

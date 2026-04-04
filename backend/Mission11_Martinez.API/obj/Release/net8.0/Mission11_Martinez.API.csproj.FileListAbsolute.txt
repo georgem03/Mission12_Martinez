@@ -76,3 +76,9 @@
 /Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/Mission11_Martinez.API.deps.json
 /Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/Mission11_Martinez.API.runtimeconfig.json
 /Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/Mission11_Martinez.API.staticwebassets.endpoints.json
+/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/publish/web.config
+/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/publish/appsettings.Development.json
+/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/publish/appsettings.json
+/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/publish/Mission11_Martinez.API.deps.json
+/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/publish/Mission11_Martinez.API.runtimeconfig.json
+/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Release/net8.0/publish/publish/Mission11_Martinez.API.staticwebassets.endpoints.json
