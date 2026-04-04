@@ -25,7 +25,7 @@ const totalPages = Math.ceil(totalBooks / pageSize);
 
 // Fetch categories once on mount
 useEffect(() => {
-fetch('https://localhost:5000/Books/categories')
+fetch('https://booksassignment-martinez-backend-gvdueebdfzh5e7g7.canadacentral-01.azurewebsites.net/Books/categories')
     .then((res) => res.json())
     .then((data) => setCategories(data))
     .catch((err) => console.error('Failed to load categories', err));
@@ -37,7 +37,7 @@ const categoryParam = selectedCategory
     ? `&category=${encodeURIComponent(selectedCategory)}`
     : '';
 fetch(
-    `https://localhost:5000/Books?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}${categoryParam}`
+    `https://booksassignment-martinez-backend-gvdueebdfzh5e7g7.canadacentral-01.azurewebsites.net/Books?pageSize=${pageSize}&pageNum=${pageNum}&sort=${sort}${categoryParam}`
 )
     .then((res) => {
     if (!res.ok) throw new Error(`Request failed: ${res.status}`);

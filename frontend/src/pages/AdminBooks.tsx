@@ -4,7 +4,7 @@ import type { Book } from '../types/Book';
 
 // Note: Ensure react-router-dom is installed via: npm install react-router-dom
 
-const API_BASE = 'https://localhost:5000/Books';
+const API_BASE = 'https://booksassignment-martinez-backend-gvdueebdfzh5e7g7.canadacentral-01.azurewebsites.net/Books';
 
 const emptyBook: Omit<Book, 'bookId'> = {
 title: '',
