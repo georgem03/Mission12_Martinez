@@ -72,6 +72,7 @@ return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4 shadow">
     <div className="container-fluid px-4">
         <span className="navbar-brand fw-bold fs-4">📚 Bookstore</span>
+        <a href="/adminbooks" className="btn btn-outline-warning ms-3 btn-sm">⚙ Admin</a>
         <button
         className="btn btn-outline-light position-relative"
         onClick={() => setShowOffcanvas(true)}
