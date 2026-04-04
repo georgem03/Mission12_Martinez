@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/612cbf53-c840-4048-b4c4-1f3ae3acc561/resourceGroups/appsvc_windows_canadacentral/providers/Microsoft.Web/sites/BooksAssignment-Martinez-Backend",
+    "appService.deploySubpath": "."
+}
