@@ -140,3 +140,4 @@
 /Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/obj/Debug/net8.0/Mission11_Martinez.API.pdb
 /Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/obj/Debug/net8.0/Mission11_Martinez.API.genruntimeconfig.cache
 /Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/obj/Debug/net8.0/ref/Mission11_Martinez.API.dll
+/Users/georgemartinez/Mission11_Martinez/backend/Mission11_Martinez.API/bin/Debug/net8.0/Bookstore.sqlite
